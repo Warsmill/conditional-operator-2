@@ -26,5 +26,22 @@ public class Main {
             System.out.println(year + " год не является високосныим.");
         }
 
+        int deliveryDistance = 95;
+        int numberDays = 0;
+        if (deliveryDistance < 100){
+            if (deliveryDistance < 20){
+                numberDays += 1;
+                System.out.println( "Потребуется дней:" + numberDays);
+            }else if(deliveryDistance >= 20 && deliveryDistance < 60 ){
+                numberDays += 2;
+                System.out.println("Потребуется дней:" + numberDays);
+            }else if(deliveryDistance >= 60 && deliveryDistance < 100 ){
+                numberDays += 3;
+                System.out.println("Потребуется дней:" + numberDays);
+            }
+        }else {
+            System.out.println("Доставки нет.");
+        }
+
     }
 }
